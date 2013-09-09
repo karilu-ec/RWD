@@ -1,0 +1,95 @@
+/* -----------------------------------
+Basic rules
+----------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	font: 100%/1.4 helvetica, arial, sans-serif;
+}
+
+/* -----------------------------------
+Form - narrow
+----------------------------------- */
+.row-form {
+	clear: left;
+	overflow: hidden;
+	zoom: 1;
+	margin: 0 0 1em;
+}
+
+.label {
+	display: block;
+	margin: 0 0 .1em;
+}
+
+.input,
+.select,
+.textarea{
+	width: 100%;
+	*width: 90%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	border-radius: .3em;
+}
+
+.input, .textarea {
+	padding: 5px;
+}
+.textarea {
+	height: 150px;
+}
+
+.form-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.radio {
+	margin-left: 1px;
+	margin-right: .5em;
+}
+.btn {
+	display: inline-block;
+	margin: 0;
+	padding: .7em 1.2em;
+	border: 0;
+	border-radius: 0.3em;
+	color: white;
+	background-color: #c10000;
+	line-height: 1;
+}
+.btn:focus {background-color: #000;}
+.btn:hover {background-color: green;}
+.btn:active {background-color: red;}
+/* -----------------------------------
+Form - wide
+----------------------------------- */
+
+@media (min-width:33em)
+{
+	.submission-form {
+		max-width: 40em;
+	}
+	.label {
+		float: left;
+		width: 25%;
+		margin: 0 2% 0 0;
+		text-align: right;
+	}
+	.input, .select, .textarea {
+		float: left;
+		width: 70%;
+	}
+	.form-indent{
+		margin-left: 27%;
+		width:70%;
+	}
+	
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Responsive forms</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="form.css">
+    <!--[if lt IE 9]>
+		<script src="respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="content">
+	<h1>
+		Page title
+	</h1>
+	<p>				
+		Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+	</p>
+	<form class="submission-form" action="#" method="post">
+		<div class="row-form">
+			<label class="label" for="first-name">First name</label>
+			<input class="input" id="first-name" name="first-name" type="text">
+		</div>
+		<div class="row-form">
+			<label class="label" for="last-name">Last name</label>
+			<input class="input" id="last-name" name="last-name" type="text">
+		</div>
+		<div class="row-form">
+			<label class="label" for="email">Email</label>
+			<input class="input" id="email" name="email" type="text">
+		</div>
+		<div class="row-form">
+			<label class="label" for="newsletter">eNewsletter</label>
+			<select class="select" id="newsletter" name="newsletter">
+				<option value="" selected>Choose an option</option>
+				<option value="Good Health">Good Health</option>
+				<option value="Hollywood Gossip">Hollywood Gossip</option>
+				<option value="Financial Worries">Financial Worries</option>
+				<option value="Cars and Planes">Cars and Planes</option>
+			</select>
+		</div>
+		<div class="row-form form-indent">
+			<ul class="form-list">
+				<li><input class="radio" id="weekly" name="freqency" type="radio"><label for="weekly">Weekly</label></li>
+				<li><input class="radio" id="fortnightly" name="freqency" type="radio"><label for="fortnightly">Fortnightly</label></li>
+				<li><input class="radio" id="monthly" name="freqency" type="radio"><label for="monthly">Monthly</label></li>
+				<li><input class="radio" id="quarterly" name="freqency" type="radio"><label for="quarterly">Quarterly</label></li>
+			</ul>
+		</div>
+		<div class="row-form">
+			<label class="label" for="instructions">Instructions</label>
+			<textarea class="textarea" id="textarea" name="textarea" rows="3" cols="30"></textarea>
+		</div>
+		<div class="row-form form-indent">
+			<input class="btn" name="submit" id="submit" type="submit" value="Submit">
+		</div>
+	</form>
+	<p>				
+		Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+	</p>
+</div>
+</body>
+</html>

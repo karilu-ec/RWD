@@ -1,0 +1,97 @@
+/* -----------------------------------
+Basic rules
+----------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	font: 100%/1.4 helvetica, arial, sans-serif;
+}
+
+/* -----------------------------------
+Navigation
+----------------------------------- */
+
+#nav ul 
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav li { display: inline; }
+
+#nav a
+{
+	display: block;
+	padding: .5em;
+	color: #fff;
+	background: #c10000;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
+
+#nav-toggle
+{
+	display: block;
+	padding: .5em .5em .5em 40px;
+	color: #fff;
+	background-color: #960000;
+	background-image: url(responsive-nav.png);
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
+
+#nav a:focus,#nav-toggle:focus { background-color: black; }
+#nav a:hover,#nav-toggle:hover { background-color: #0d558e; }
+#nav a:active,#nav-toggle:active { background-color: red; }
+
+/* -----------------------------------
+Predefined
+----------------------------------- */
+
+.js #nav
+{
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+#nav.opened { max-height: 9999px; }
+
+/* -----------------------------------
+Navigation wide screen
+----------------------------------- */
+
+@media (min-width: 38em)
+{
+	.js #nav { position: relative; }
+	.js #nav.closed { max-height: none; }
+	#nav-toggle { display: none; }
+	
+	#nav
+	{
+		overflow: hidden;
+		zoom: 1;
+		background-color: #c10000;
+	}
+	
+	#nav a
+	{
+		float: left;
+		padding: .5em 1em;
+		border-bottom: 0;
+		border-right: 1px solid #fff;
+	}
+}

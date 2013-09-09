@@ -1,0 +1,77 @@
+/* -----------------------------------
+Basic rules
+----------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 20px;
+	color: #000;
+	background-color: #fff;
+	font-size: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	line-height: 1.4;
+}
+
+/* -----------------------------------
+Initial pseudo-element
+----------------------------------- */
+
+body:before
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: .5em;
+	color: #fff;
+	font-size: 200%;
+}
+
+/* -----------------------------------
+Pseudo-elements in media queries
+----------------------------------- */
+
+@media (min-width:20em) and (max-width:30em)
+{
+	body:before
+	{
+		content: "20em - 30em";
+		background-color: green;
+	}
+}
+
+@media (min-width:30em) and (max-width:40em)
+{
+	body:before
+	{
+		content: "30em - 40em";
+		background-color: blue;
+	}
+}
+
+@media (min-width:40em) and (max-width:50em)
+{
+	body:before
+	{
+		content: "40em - 50em";
+		background-color: purple;
+	}
+}
+
+@media (min-width:50em) and (max-width:60em)
+{
+	body:before
+	{
+		content: "50em - 60em";
+		background-color: orange;
+	}
+}
+
+@media (min-width:60em) and (max-width:70em)
+{
+	body:before
+	{
+		content: "60em - 70em";
+		background-color: olive;
+	}
+}
